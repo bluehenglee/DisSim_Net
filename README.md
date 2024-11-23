@@ -10,12 +10,6 @@ Welcome to the official repository for the paper: "Beyond Point Annotation: A We
 
 **Feature heatmap results of ablation Experiments.** Compared to the baseline model that directly uses point-generated pseudo-label masks for supervision, incorporating Distance Similarity Prior (DS) not only greatly improves the model's ability to locate the target, but also significantly enhances shape learning, leading to better segmentation with a more accurate fit for the target with segmentation. However, there is still an under-segmentation problem for small targets. By adding alignment loss (La), our algorithm can more accurately locate the segmentation target, but further improvements are needed for shape fitting. With the inclusion of contrastive loss (Lc), the model's shape fitting improves further, and it can largely reflect the shape features of segmented targets. Combining La and Lc further improves both localization and shape fitting, but the shape fitting issue still remains. By combining DS with La or DS with Lc, better segmentation results can be achieved, but there are still some under-segmentation and over-segmentation regions. By combining all three modules, we can obtain segmentation results that are on par with fully supervised segmentation, achieving satisfactory results.
 
-<div style="text-align: center;">
-  <img src="comparation_results.png" width="860" />
-</div>
-
-**Prediction results of comparative experiments.** Comparative experiments have demonstrated the effectiveness of our algorithm, achieving good segmentation on multiple targets, small targets, and complexly shaped targets on two datasets.
-
 
 ## Environment Requirements
 
